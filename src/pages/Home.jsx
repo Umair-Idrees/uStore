@@ -46,7 +46,7 @@ const Home = () => {
               <span>
                 <img
                   src={textImg}
-                  className="h-12 w-16 md:h-full  md:w-full lg:h-24 lg:w-28 ml-3  object-contain "
+                  className="h-12 w-16 md:h-16 md:w-20 lg:h-24 lg:w-28 ml-3  object-contain "
                 />
               </span>
             </h2>
