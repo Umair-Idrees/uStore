@@ -25,6 +25,7 @@ function App() {
         <Route path="/checkout" element={<Checkout setOrder={setOrder} />} />
         <Route path="/order-confirmation" element={<Order order={order} />} />
         <Route path="/filter-data" element={<FilterData />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/contact" element={<ContactForm />} />
       </Routes>
       <Footer />

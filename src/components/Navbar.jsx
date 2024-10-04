@@ -32,7 +32,22 @@ const Navbar = () => {
 
   const products = useSelector((state) => state.cart.products);
   return (
-    <nav className="bg-white shadow-md py-2">
+    <nav className="bg-white shadow-md ">
+      <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white text-center py-1 md:py-3 relative overflow-hidden lg:py-1">
+        <p className="text-xs sm:text-sm md:text-lg font-extrabold tracking-wider uppercase relative z-10 ">
+          <span className="animate-pulse ">🔥</span>
+          50% OFF on all items! Limited Time Offer!
+          <span className="animate-pulse">🔥</span>
+        </p>
+
+        {/* Skewed background */}
+        <div className="absolute left-0 top-0 w-full h-full bg-orange-400 opacity-30 transform -skew-y-3 z-0"></div>
+
+        {/* Bouncing Circles */}
+        <div className="absolute top-0 left-4 w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-yellow-300 shadow-lg animate-bounce z-10"></div>
+        <div className="absolute top-0 right-4 w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-yellow-300 shadow-lg animate-bounce z-10"></div>
+      </div>
+
       <div className="container mx-auto px-4 md:px-16 lg:px-24 py-3 flex items-center justify-between">
         <div className="text-lg font-bold">
           <Link to="/">
